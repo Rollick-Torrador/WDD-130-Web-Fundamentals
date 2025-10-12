@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Quicksand:wght@300..700&family=Trade+Winds&display=swap');
+
+:root {
+  --primary-color: #002B45   ;
+  --secondary-color: #00A6A6 ;
+  --accent1-color: #F9B233;
+  --accent2-color: #F95C00;
+
+  --heading-font: "Trade Winds";
+  --paragraph-font: "Quicksand";
+}
+body {
+    background-color: white;
+}
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+header {
+    background-color: var(--secondary-color);
+    font-size: large;
+}
+.logo {
+    width: 80px;
+    display: block
+}
+nav a:hover {
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: underline;
+}
+nav a {
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+}
+#hero-img {
+    width: 100%;
+}
+#hero-msg h1 {
+    text-align: center;
+}
+#hero-msg h4 {
+    text-align: center;
+}
+.button-box {
+    text-align: center;
+}
+.book {
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+}
+.book:hover {
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: underline;
+}
+main section {
+    text-align: center;
+}
+.icon {
+    width: 80px;
+}
+#backround {
+    height: 725px;
+    background-color: var(--secondary-color);
+}
+.msg {
+    background-color: var(--secondary-color);
+}
+.msg h2{
+    color: white;
+}
+.msg p {
+    color: white;
+}
+.join {
+    background-color:  var(--secondary-color);
+    color: white;
+    text-decoration: none;
+}
+.join:hover {
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: underline;
+}
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1.2em;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+footer a:hover {
+    background: var(--secondary-color);
+    color: white;
+    text-decoration: underline;
+}

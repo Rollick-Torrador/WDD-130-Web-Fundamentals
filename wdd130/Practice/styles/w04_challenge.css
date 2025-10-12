@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+/*fonts are: Zalando Sans & Quicksand (sans serif), PR Serif & Serif (serif)*/
+:root {
+--background-color: #659EC7;
+--font-family: "Zalando Sans", "Quicksand", "PR Serif", "Serif" 
+--heading-font: "Zalando Sans";
+--paragraph-font: "PR Serif";
+
+--alternate-text-color: black;
+--general-text-color: white;
+}
+body {
+    background: var(--background-color);
+    margin: 0 auto;
+    font-family: "PR Serif";
+    text-align: center;
+    color: var(--general-text-color)
+}
+.header {
+    font-weight: 700;
+    font-family: "Zalando Sans";
+}
+main h1:hover {
+    color: var(--alternate-text-color)
+}
+.quote {
+    font-weight: 100;
+    font-size: x-small;
+    line-height: 1.5;
+}
+.byline {
+    font-family: "Zalando Sans";
+    font-weight: bold;
+    font-size: small;
+}
+.list-section {
+    display:flex;
+    justify-content:center
+}
+.list {
+    font-family: "Zalando Sans";
+    font-weight: bold;
+    font-size: small;
+    text-align:left;
+    color: var(--alternate-text-color);
+    line-height: 1.5;
+}
+.image {
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    max-width: 100px;
+}
+.second-quote {
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    max-width: 250px;
+    font-size: clamp(1rem, 1.5 vw , 3rem);
+    font-weight: 400;
+}
+.footer {
+    display: block;
+    max-width: 280px;
+    font-size: small;
+    font-weight: bold;
+    color: var(--alternate-text-color);
+    margin: 0 auto;
+    text-align: center;
+}

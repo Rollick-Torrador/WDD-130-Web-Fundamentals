@@ -63,7 +63,7 @@ main section {
 .icon {
     width: 80px;
 }
-#backround {
+#background {
     height: 725px;
     background-color: var(--secondary-color);
 }

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Quicksand:wght@300..700&family=Trade+Winds&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Metal+Mania&family=Quicksand:wght@300..700&family=Rubik+Glitch&family=Trade+Winds&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap');
 
 :root {
   --primary-color: #002B45   ;
@@ -6,8 +6,8 @@
   --accent1-color: #F9B233;
   --accent2-color: #F95C00;
 
-  --heading-font: "Trade Winds";
-  --paragraph-font: "Quicksand";
+  --heading-font: "Trade Winds", "Metal Mania", "Rubik Glitch";
+  --paragraph-font: "Quicksand", "Zalando Sans", "Libre Franklin";
 }
 body {
     background-color: white;
@@ -41,6 +41,10 @@ nav a {
 #hero-msg h1 {
     text-align: center;
 }
+.home-title {
+    color: black;
+    font-family: var(--heading-font);
+}
 #hero-msg h4 {
     text-align: center;
 }
@@ -72,6 +76,7 @@ main section {
 }
 .msg h2{
     color: white;
+    font-family: var(--heading-font);
 }
 .msg p {
     color: white;

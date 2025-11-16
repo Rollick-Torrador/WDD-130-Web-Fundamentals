@@ -202,6 +202,92 @@ footer a:hover {
 .social {
     padding-top: 15px
 }
+
+/*This is the start of "Rivers Page" CSS */
+.river-main-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem 4rem;
+    background: white;
+    font-family: var(--paragraph-font);
+}
+.river-title {
+    font-family: var(--heading-font);
+    color: var(--accent2-color);
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.river-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.river-card {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.river-image {
+    position: relative;
+    overflow: hidden;
+    border: 8px solid black;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.river-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+.river-image .hover-img {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.river-name {
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 0.75rem 0 0.25rem;
+}
+.river-description {
+    color: white;
+    margin: 0;
+    padding: 1rem;
+    background: var(--secondary-color);
+    border-radius: 4px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+.river-card:hover .hover-img {
+    opacity: 1;
+}
+.river-card:hover .river-description {
+    max-height: 400px;
+    opacity: 1;
+}
+.river-main-section .button-box {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 900px) {
+    .river-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;

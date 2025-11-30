@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fredoka:wght@300..700&family=M+PLUS+Rounded+1c&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #3dc6ef   ;
+  --secondary-color: #808488 ;
+  --accent1-color: #EBDBEF;
+  --accent2-color: white;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "M PLUS Rounded 1c", Fredoka;
+  --paragraph-font: nunito, figtree, montserrat;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #3dc6ef;  /* headlines on a white background */ 
+  --headline-color-on-color: #808488; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #808488; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #808488; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #ebdbef  ;
+  --nav-link-color: #3dc6ef;
+  --nav-background-color: #ebdbef;
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: #808488;
+}
+body {
+    margin: 0;
+    font-family: var(--paragraph-font);
+    color: var(--secondary-color) ;
+    background-color: white;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+/*Header and Nav*/
+.site-header {
+    background-color: var(--primary-color);
+    padding: 1rem 1.5rem .5rem;
+    text-align: center;
+}
+.site-header img {
+    display: block;
+    margin: 0 auto;
+}
+.logo {
+    max-width: 260px;
+    margin: 0 auto 0.75rem;
+}
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding-bottom: 0.75rem;
+}
+.nav-link {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 0.05em;
+    position: relative;
+    padding: 0.75rem 0.75rem;
+}
+.nav-link.active {
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+    border-radius: 999px;
+}
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.2rem;
+    width: 0;
+    height: 2px;
+    background-color: var(--nav-link-color);
+    transition: width 0.2s ease-out;
+}
+.nav-link:hover::after {
+    width: 100%;
+}
+.nav-link:hover {
+    color: var(--nav-hover-link-color)
+}
+/*Home Page Main*/
+.page-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+/*Hero Section*/ 
+.hero {
+    display: grid;
+    grid-template-columns: minmax(0,2fr) minmax(0, 1.5fr);
+    gap: 2rem;
+    align-items: stretch;
+}
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.75rem;
+}
+.card.hero-text {
+    background-color: var(--accent1-color);
+    color: var(--secondary-colorcolor)
+}
+.card {
+    padding: 1.75rem;
+    border-radius: 0.75rem;
+}
+.hero-text h1 {
+    font-family: var(--heading-font);
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+}
+/*Therapists section*/
+.therapist-tabs input[type="radio"] {
+  display: none;
+}
+.therapist-names {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.therapist-name {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 999px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 600;
+}
+.therapist-panel {
+  display: none;
+}
+.therapist-layout {
+    display: grid;
+    grid-template-columns: 1.2fr 2fr;
+    grid-template-rows: auto 1fr;
+    gap: 1.5rem;
+}
+.therapists {
+    background-color: var(--accent1-color);
+    padding: 2rem 1.75rem;
+    border-radius: 0.75rem;
+}
+.therapists h1 {
+    font-family: var(--heading-font);
+    margin-top: 0;
+}
+.section-intro {
+    max-width: 60ch;
+    margin-bottom: 1.5rem;
+}
+.therapist-layout {
+    display: grid;
+    grid-template-columns: 1.2fr 2fr;
+    grid-template-rows: auto 1fr;
+    gap: 1.5rem;
+    align-items: start;
+}
+.therapist-layout input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+.therapist-photo {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    background-color: var(--accent2-color);
+    border-radius: 0.75rem;
+    padding: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.therapist-photo .photo {
+    display: none;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+.therapist-names {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    gap: 1rem;
+}
+.therapist-name {
+    flex: 1;
+    padding: 0.5rem 0.75rem;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 999px;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+}
+.therapist-name:hover {
+    background-color: var(--secondary-color);
+}
+.therapist-panels {
+    grid-column: 2;
+    grid-row: 2;
+}
+.therapist-panel {
+    display: none;
+}
+.therapist-panel h2 {
+    margin-top: 0;
+}
+.card {
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 0.75rem;
+    padding: 1.25rem;
+}
+#tab-audrey:checked ~ .therapist-photo .photo-audrey,
+#tab-shelly:checked ~ .therapist-photo .photo-shelly,
+#tab-jason:checked  ~ .therapist-photo .photo-jason {
+    display: block;
+}
+#tab-audrey:checked ~ .therapist-panels .panel-audrey,
+#tab-shelly:checked ~ .therapist-panels .panel-shelly,
+#tab-jason:checked  ~ .therapist-panels .panel-jason {
+    display: block;
+}
+#tab-audrey:checked ~ .therapist-names label[for="tab-audrey"],
+#tab-shelly:checked ~ .therapist-names label[for="tab-shelly"],
+#tab-jason:checked  ~ .therapist-names label[for="tab-jason"] {
+    background-color: var(--secondary-color);
+}
+/*Footer Section*/
+.site-footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem 1.5rem;
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-links {
+    display: flex;
+    gap: 1rem;
+}
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem;    
+}
+.footer-links a:hover {
+    text-decoration: underline;
+}
+.social-icons {
+    display: flex;
+    gap: 0.5rem;
+}

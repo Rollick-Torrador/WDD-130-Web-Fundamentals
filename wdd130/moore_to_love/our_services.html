@@ -3,53 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Our Services</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <Header>
+    <Header class="site-header">
         <img src="images/logo_blue.png" alt="Moore To Love Logo">
+        <nav class="main-nav">
+            <a class="nav-link" href="home.html">Home</a>
+            <a class="nav-link" href="our_services.html">Our Services</a>
+            <a class="nav-link" href="contact_us.html">Contact Us</a>
     </Header>
-    <div>
-        <a href="home.html">Home</a>
-        <a href="our_services.html">Our Services</a>
-        <a href="contact_us.html">Contact Us</a>
-    </div>
-    <main>
+    <main class="our-services-main">
         <section>
-            <img src="images/another_couple.png" alt="Couple in therapy">
-            <h1>How Can We Help You</h1>
-            <p>The questions we can help you answer include: how can I improve my marriage, where do I go for help, and is there a path forward? The answer is here at Moore to Love, where our specially trained Clinical Therapists help couples work through problems and get back to a happy equilibrium. No one wants their relationships to fail, but sometimes a little work is needed. We can make that work a little easier. </p>
+            <img class="img-top" src="images/another_couple.png" alt="Couple in therapy">
+            <div class="text-top text-box">    
+                <h1>How Can We Help You</h1>
+                <p>The questions we can help you answer include: how can I improve my marriage, where do I go for help, and is there a path forward? The answer is here at Moore to Love, where our specially trained Clinical Therapists help couples work through problems and get back to a happy equilibrium. No one wants their relationships to fail, but sometimes a little work is needed. We can make that work a little easier. </p>
+            </div>
         </section>
         <section>
-            <h1>What is there to do?</h1>
-            <p>The following are activities that you can complete on our site. A connection quiz, where you learn about your partners love language and how to help them better. Reading about our therapists and finding the best fit for you and your partner. Learning about your options for therapy and the different types of services our therapists perform. Finally, once you are ready, head on over to our “contact us” page to schedule your first appointment.</p>
-            <button>Take your love laguages quiz here</button>
-            <img src="images/happy_older_couple.png" alt="Happy Older Couple">
+            <div class="text-mid text-box">
+                <h1>What is there to do?</h1>
+                <p>The following are activities that you can complete on our site. A connection quiz, where you learn about your partners love language and how to help them better. Reading about our therapists and finding the best fit for you and your partner. Learning about your options for therapy and the different types of services our therapists perform. Finally, once you are ready, head on over to our “contact us” page to schedule your first appointment.</p>
+            </div>
+            <div class="quiz-box">    
+                <button>Take your love laguages quiz here</button>
+            </div>
         </section>
         <section>
-            <img src="images/fulfillment_in_meadow.png" alt="Standing in a meadow">
-            <h1>Why Schedule With Moore to Love</h1>
-            <p>You’ll likely come to our site from personal references and online recommendations to find a place to resolve issues that might be holding your relationship back. Our purpose is to find a way to get you to schedule your first appointment on our “contact us” page and get that first appointment scheduled. Now, why choose Moore to Love over another group of therapists? At Moore to Love, we understand that everyone has troubles, and our therapists are the best in the industry at helping couples resolve differences, improve themselves, and in turn, improve their relationships. You choose us because you are serious about finding and making meaningful change!</p>
+            <img class="img-bottom" src="images/fulfillment_in_meadow.png" alt="Standing in a meadow">
+            <div class="text-bottom text-box">
+                <h1>Why Schedule With Moore to Love</h1>
+                <p>You’ll likely come to our site from personal references and online recommendations to find a place to resolve issues that might be holding your relationship back. Our purpose is to find a way to get you to schedule your first appointment on our “contact us” page and get that first appointment scheduled. Now, why choose Moore to Love over another group of therapists? At Moore to Love, we understand that everyone has troubles, and our therapists are the best in the industry at helping couples resolve differences, improve themselves, and in turn, improve their relationships. You choose us because you are serious about finding and making meaningful change!</p>
+            </div>
         </section>
         <section>
-            <button><a href="contact_us.html">Contact Us</button>
+            <a class="contact-button contact-grid" href="contact_us.html">Contact Us</a>
         </section>
     </main>
-    <footer>
-     <p>Moore To Love &copy; 2018</p>
-        <p><a href="site-plan.html">Site Plan</a></p>
-        <p><a href="home.html">Home</a></p>
-        <p><a href="contact_us.html">Contact Us</a></p>
-        <div>
+    <footer class="site-footer">
+        <p>Moore To Love &copy; 2018</p>
+        <div class="footer-links">
+            <a href="site-plan.html">Site Plan</a></p>
+            <a href="our_services.html">Our Services</a></p>
+            <a href="contact_us.html">Contact Us</a></p>
+        </div>
+        <div class="social-icons">
             <a href="https://facebook.com" target="_blank">
-                <img src="images/facebook.png" alt="fb icon">
+                <img src="images/facebook.png" alt="facebook icon">
             </a>
             <a href="https://twitter.com" target="_blank">
                 <img src="images/twitter.png" alt="twitter icon">
             </a>
             <a href="https://instagram.com" target="_blank">
                 <img src="images/instagram.png" alt="instagram icon">
-            </a>    
-    </footer>  
+            </a>
+        </div>    
+    </footer> 
 </body>
 </html>

@@ -7,17 +7,18 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <Header class="site-header">
+    <header class="site-header">
         <img src="images/logo_blue.png" alt="Moore To Love Logo">
         <nav class="main-nav">
-            <a class="nav-link active" class="active" href="home.html">Home</a>
+            <a class="nav-link active" href="home.html">Home</a>
             <a class="nav-link" href="our_services.html">Our Services</a>
             <a class="nav-link" href="contact_us.html">Contact Us</a>
-    </Header>
+        </nav>
+    </header>
     <main class="page-content">
         <section class="hero">
             <div class="hero-image">
-                <img src="images\couples_therapy.jpg" alt="Couples Therapy">
+                <img src="images/couples_therapy.jpg" alt="Couples Therapy">
             </div>
             <div class="hero-text card text-box">
                 <h1>What We Do</h1>
@@ -29,12 +30,10 @@
             <p class="section-intro">Moore to Love has three main therapists who specialize in different areas of treatment.</p>
 
             <div class="therapist-layout">
-                <!-- Hidden radios (no JS) -->
                 <input type="radio" name="therapist" id="tab-audrey" checked>
                 <input type="radio" name="therapist" id="tab-shelly">
                 <input type="radio" name="therapist" id="tab-jason">
 
-                <!-- LEFT COLUMN: all photos (we'll show one at a time) -->
                 <div class="therapist-photo">
                 <img class="photo photo-audrey"
                     src="images/audrey_moore_headshot.png"
@@ -47,29 +46,27 @@
                     alt="Jason Conchake Headshot">
                 </div>
 
-                <!-- RIGHT TOP: name “buttons” -->
                 <div class="therapist-names">
                 <label class="therapist-name" for="tab-audrey">Audrey Moore</label>
                 <label class="therapist-name" for="tab-shelly">Shelly Morrison</label>
                 <label class="therapist-name" for="tab-jason">Jason Conchake</label>
                 </div>
 
-                <!-- RIGHT BOTTOM: bios (one visible at a time) -->
                 <div class="therapist-panels">
-                <div class="therapist-panel panel-audrey card">
+                <div class="therapist-panel panel-audrey therapist-card">
                     <p>
                     Audrey Moore is our founder. She is EMDR certified and works primarily with married couples.
                     </p>
                 </div>
 
-                <div class="therapist-panel panel-shelly card">
+                <div class="therapist-panel panel-shelly therapist-card">
                     <p>
                     Shelly works primarily with younger families and uses ART therapy to help repair relationships
                     that need a special touch.
                     </p>
                 </div>
 
-                <div class="therapist-panel panel-jason card">
+                <div class="therapist-panel panel-jason therapist-card">
                     <p>
                     Jason has over thirty years in the industry and specializes in CBT therapy. He helps people
                     stretch out of their comfort zones to reach new heights.
@@ -78,16 +75,16 @@
                 </div>
             </div>
         </section>
-        <section>
-            <a class="contact-button contact-grid" href="contact_us.html">Contact Us</a>
+        <section class="home-cta">
+            <a class="button-primary" href="contact_us.html">Contact Us</a>
         </section>
     </main>
     <footer class="site-footer">
         <p>Moore To Love &copy; 2018</p>
         <div class="footer-links">
-            <a href="site-plan.html">Site Plan</a></p>
-            <a href="our_services.html">Our Services</a></p>
-            <a href="contact_us.html">Contact Us</a></p>
+            <a href="site-plan.html">Site Plan</a>
+            <a href="our_services.html">Our Services</a>
+            <a href="contact_us.html">Contact Us</a>
         </div>
         <div class="social-icons">
             <a href="https://facebook.com" target="_blank">

@@ -113,7 +113,7 @@ nav a.active {
 }
 .card.hero-text {
     background-color: var(--accent1-color);
-    color: var(--secondary-colorcolor)
+    color: var(--secondary-color)
 }
 .card {
     padding: 1.75rem;
@@ -223,7 +223,7 @@ nav a.active {
 .therapist-panel h2 {
     margin-top: 0;
 }
-.card {
+.therapist-card {
     background-color: var(--secondary-color);
     color: white;
     border-radius: 0.75rem;
@@ -243,6 +243,23 @@ nav a.active {
 #tab-shelly:checked ~ .therapist-names label[for="tab-shelly"],
 #tab-jason:checked  ~ .therapist-names label[for="tab-jason"] {
     background-color: var(--secondary-color);
+}
+.button-primary {
+  background-color: var(--primary-color);
+  color: white;
+  font-family: var(--paragraph-font);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.2s ease;
+}
+.home-cta {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 /*Footer Section*/
 .site-footer {
@@ -298,12 +315,18 @@ nav a.active {
 .our-services-main > section {
     display: contents;
 }
+.our-services-main > section.our-services-cta {
+  display: flex;
+  justify-content: center;
+  grid-column: 1 / -1;
+  margin: 2rem 0;
+}
 .text-box {
     background-color: var(--accent1-color);
     padding: 1.5rem;
     border-radius: 12px;
     box-shadow: 0 2px 8px black;
-    backdrop-filter: blur(blur(4px));
+    backdrop-filter: blur(4px);
 }
 
 .img-top {
@@ -364,31 +387,17 @@ nav a.active {
     grid-row: 3/4;
     margin-left: 2rem;
 }
-.contact-button {
-    justify-self: center;
-    align-self: center;
-
-    background-color: var(--primary-color);
-    color: white;
-    font-family: var(--paragraph-font);
-    padding: 1rem 2rem;
-    border-radius: 10px;
-    font-size: 1rem;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
-    transition: background-color 0.2s ease;
-}
-.contact-grid {
-    grid-column: 1/-1;
-    margin: 2rem 0;
+.our-services-cta {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 /*Contact Us Section*/
 .contact-us-main {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(2 auto);
+    grid-template-rows: repeat(2, auto);
     margin-top: 25px;
     row-gap: 2rem;
     column-gap: 2rem;

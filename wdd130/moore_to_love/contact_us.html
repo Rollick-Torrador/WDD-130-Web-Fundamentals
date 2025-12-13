@@ -12,19 +12,20 @@
         <nav class="main-nav">
             <a class="nav-link" href="home.html">Home</a>
             <a class="nav-link" href="our_services.html">Our Services</a>
-            <a class="nav-link" href="contact_us.html">Contact Us</a>
+            <a class="nav-link active" href="contact_us.html">Contact Us</a>
     </Header>
-    <main>
-        <section>
+    <main class="contact-us-main">
+        <img class="top-contact-image" src="images/couple_on_phone.png" alt="Couple talking on the phone">
+        <section class="contact-card text-box">
             <h1>How to Contact Us</h1>
             <p>Just fill out the box below with your name, number, and your preferred meeting times, and we’ll reach out to schedule your first appointment. Scheduling is completely hassle-free. Once your appointment is set, make sure to arrive 15 minutes early before your first appointment to fill out the appropriate paperwork, and your therapist will be right with you. We look forward to joining you on your self-improvement journey. </p>
-            <img src="images/couple_on_phone.png" alt="Couple talking on the phone">
         </section>
-        <section>
+        <div class="info-card text-box">
             <H1>Information Needed</H1>
             <p1>To schedule an appointment with one of our therapists, all you need is your contact information, including the names of you and your partner, your email or phone number, and then write us a message detailing your availablity and if you have a preference, which therapist you’d like to meet with. Then, you can click the "send your message button" to schedule that first meeting with your therapist.</p>
-            <img src="images/calendar.jpg" alt="background picture of a calendar">
-            <form action="/my-handling-form-page" method="post">
+        </div>
+        <div class="contact-image-box">
+            <form class="form-fill" action="/my-handling-form-page" method="post">
                 <p>
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="user_name" />
@@ -38,10 +39,10 @@
                     <textarea id="msg" name="user_message"></textarea>
                 </p>
                 <p class="button">
-                    <button type="submit">Send your message</button>
+                    <button class="submit-button" type="submit">Send your message</button>
                 </p>
             </form>
-        </section>
+        </div> 
     </main>
     <footer class="site-footer">
         <p>Moore To Love &copy; 2018</p>
